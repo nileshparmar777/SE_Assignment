@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+main()  
+{  
+    int cprice, sprice, plamt;
+
+    printf("Input Cost Price: ");
+    scanf("%d", &cprice);
+    printf("Input Selling Price: ");
+    scanf("%d", &sprice);
+
+    if(sprice > cprice)
+    {  
+        plamt = sprice - cprice;
+        printf("\nYour profit amount is : %d\n", plamt);
+    }  
+    else if(cprice > sprice)
+    {  
+        plamt = cprice - sprice;
+        printf("\nYour loss of amount is : %d\n", plamt);
+    }  
+    else
+    {  
+        printf("\nYou are in a no profit, no loss condition.\n");
+    }  
+}  
